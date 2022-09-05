@@ -1,0 +1,15 @@
+
+[  
+    {"id":"01", "nombre":"Zapatillas Nike Jordan", "precio": 20000, "img": "https://www.digitalsport.com.ar/files/products/5ec6e9e01ebb0-503895-500x500.jpg", "descripcion": "Air Jordan 1 Chicago", "categoria": "Zapatillas","cantidad": 0},
+    {"id":"02", "nombre":"Remera Nike", "precio": 5700, "img": "https://ferreira.vteximg.com.br/arquivos/ids/377684-1000-1000/ni_DA0238010.jpg?v=637572168368030000", "descripcion": "Remera Nike Just Do It", "categoria": "Indumentaria","cantidad": 0},
+    {"id":"03", "nombre":"Mochila Nike", "precio": 8000, "img": "https://www.digitalsport.com.ar/files/products/626161e164d36-553700-500x500.jpg", "descripcion": "Mochila Brasilia 9.5", "categoria": "Accesorios","cantidad": 0},
+    {"id":"04", "nombre":"Remera Nike Jordan", "precio": 8500, "img": "https://www.digitalsport.com.ar/files/products/626073d7599c8-548070-500x500.jpg", "descripcion": "Jordan Flight Heritage", "categoria": "Indumentaria","cantidad": 0},
+    {"id":"05", "nombre":"Remera Nike ACG", "precio": 6800, "img": "https://www.digitalsport.com.ar/files/products/5f8f153f1ab93-536998-500x500.jpg", "descripcion": "Nike ACG 20SS", "categoria": "Indumentaria","cantidad": 0},
+    {"id":"06", "nombre":"Zapatillas Nike Jordan", "precio": 42000, "img": "https://essential.vtexassets.com/arquivos/ids/453529-1200-auto?v=637630800048100000&width=1200&height=auto&aspect=true ", "descripcion": "Air Jordan 1 mid GS", "categoria": "Zapatillas","cantidad": 0},
+    {"id":"07", "nombre":"Pantalon Nike", "precio": 8000, "img": "https://www.digitalsport.com.ar/files/products/5e9e0c423cdd8-489003-500x500.jpg", "descripcion": "Nike Club Cargo", "categoria": "Pantalones","cantidad": 0},
+    {"id":"08", "nombre":"Piluso Jordan", "precio": 7000, "img": "https://www.digitalsport.com.ar/files/products/615f88a835086-542718-500x500.jpg", "descripcion": "Jordan Bucket Jumpman", "categoria": "Accesorios","cantidad": 0},
+    {"id":"09", "nombre":"Buzo Nike ACG Goretex", "precio": 44000, "img": "https://www.digitalsport.com.ar/files/products/60798f9cc045b-552700-500x500.jpg", "descripcion": "Nike ACG Goterex", "categoria": "Indumentaria","cantidad": 0}
+] 
+
+
+

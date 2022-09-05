@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="./js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>IBIZA | STORE</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="./imagenes/palmera.png">
+</head>
+
+<body class="contenido">
+    
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">IBIZA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link active filtrar-categoria" aria-current="page" href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item" onclick="filtrarCategoria('Zapatillas')">
+                        <a class="nav-link filtrar-categoria">
+                            Zapatillas
+                        </a>
+                    </li>
+                    <li class="nav-item" onclick="filtrarCategoria('Indumentaria')">
+                        <a class="nav-link filtrar-categoria">
+                            Indumentaria
+                        </a>
+                    </li>
+                    <li class="nav-item" onclick="filtrarCategoria('Pantalones')">
+                        <a class="nav-link filtrar-categoria">
+                            Pantalones
+                        </a>
+                    </li>
+                    <li class="nav-item" onclick="filtrarCategoria('Accesorios')">
+                        <a class="nav-link filtrar-categoria">
+                            Accesorios
+                        </a>
+                    </li>
+                        
+                </ul>
+            </div>
+        </div>
+   </nav>
+
+    <header class="header__pagina mt-0">
+    <div class="container-fluid d-flex  justify-content-around  mt-2 ">
+        <h1 id="titulo" class="text-center m-4" href="#">IBIZA STORE</h1>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse boton__carrito" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="botonCarrito">
+                        
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="carritoModal()"><img src="./imagenes/shoppingcart_77968.png" class="px-2" alt="imagen carrito" height="25px"><b class="texto">Carrito: </b>
+                            <span><b id="carrito-total">Carrito</b></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+    
+    <section>
+        <!-- Modal -->
+        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title f" id="exampleModalLabel"><mark>CARRITO DE COMPRAS</mark></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">PRODUCTO</th>
+                                    <th scope="col">IMAGEN</th>
+                                    <th scope="col">CANTIDAD</th>
+                                    <th scope="col">PRECIO</th>
+                                </tr>
+                            </thead>
+                            <tbody id="producto-carrito">
+                                
+                            </tbody>
+                                
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" id="vaciar-carrito" data-bs-dismiss="modal" onclick="vaciarCarrito()" class="btn btn-danger">Vaciar carrito</button>
+                        <button type="button" data-bs-dismiss="modal" onclick="finalizarCompra()" class="btn btn-warning">Finalizar compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="cardsdinamicas" class="containter-fluid d-flex flex-wrap justify-content-around mt-5">
+    </div>
+
+
+
+    <footer class="pie py-5">
+        <ul class="pie__lista text-center">      
+                <li class="pie__lista__item">
+                  <a href="https://www.facebook.com/Ibiza" target="_blank"> <img src="./imagenes/facebook.png" alt="logoFacebook" width="40px" height="40px"> </a>
+                </li>
+                <li class="pie__lista__item">
+                  <a href="https://www.instagram.com/Ibiza" target="_blank"> <img src="./imagenes/instagram.png" alt="logoInstagram" width="40px" height="40px"></a>
+                </li>
+                <li class="pie__lista__item">
+                  <a href="https://wa.me/+543424066543" target="_blank"> <img src="./imagenes/whatsapp.png" alt="logoWhatsapp" width="40px" height="40px"></a>
+                </li>
+                      
+                  
+        </ul>
+    
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+
+</body>
+</html>
